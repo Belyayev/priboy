@@ -42,9 +42,10 @@ h1 {
 }
 
 .message {
-  width: 50%;
+  width: 80%;
   margin: auto;
   align-items: center;
   justify-content: center;
   color: white;
+  margin-bottom: 1rem;
 }
