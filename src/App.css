@@ -1,16 +1,16 @@
 body {
-  background-color: black;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.24), rgba(0,0,0)), url(./images/background.jpg);
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
   text-align: center;
-  color: #61dafb;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: #4b9bdd;
 }
 
 .App-header {
@@ -35,4 +35,16 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  color: #ebf1f3;
+}
+
+.message {
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }

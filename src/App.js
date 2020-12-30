@@ -1,19 +1,26 @@
 import './App.css';
+import {useEffect} from 'react';
 import useSound from 'use-sound';
+import Snowfall from 'react-snowfall'
 
 import music from './sound/Happy_New_Year.mp3';
 
 function App() {
 
-  const [melody] = useSound(music);
+  const [play] = useSound(music);
+
+  useEffect(() => {
+    play();
+  });
 
   return (
     <div className="App">
-      <h2>Поздравляем с Новым 2021 годом!</h2>
-      <h1>ИП Прибой</h1>
+      <Snowfall snowflakeCount={250}/>
+      <h2>компания ИП Прибой поздравляет Вас</h2>
+      <h1>С Новым 2021 годом!</h1>
+      <p className="message">Дорогие друзья, с праздником! От всей души хотим пожелать, чтобы в наступающем 2021 году Белого Металлического Быка в вашей семье все были здоровы, рядом были верные и добрые друзья, в делах вас ждали успех и удача, а жизнь была наполнена счастьем и любовью!</p>
       <p>г.Уральск</p>
       <p>priboy2005@mail.ru</p>
-      <button onClick={melody}>melody</button>
     </div>
   );
 }
