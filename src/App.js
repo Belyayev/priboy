@@ -1,5 +1,4 @@
 import './App.css';
-import {useEffect} from 'react';
 import useSound from 'use-sound';
 import Snowfall from 'react-snowfall'
 
@@ -8,10 +7,6 @@ import music from './sound/Happy_New_Year.mp3';
 function App() {
 
   const [play] = useSound(music);
-
-  // useEffect(() => {
-  //   play();
-  // });
 
   return (
     <div className="App">
